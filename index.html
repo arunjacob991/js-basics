@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="iife.js" />
-</body>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <p id="paragraph">
+        <button id="button">Click Me!</button>
+      </p> -->
+      <div>
+        <label>Input</label>
+        <input type = "text">
+      </div>
+      <div>
+        <b>Default:</b>
+        <span id="default"default></span>
+      </div>
+      <div>
+        <b>Debounce:</b>
+        <span id="debounce"default></span>
+      </div>
+      <div>
+        <b>Throttle:</b>
+        <span id="throttle"default></span>
+      </div>
+    </div>
+    <script src="./debounce.js" />
+  </body>
 </html>
