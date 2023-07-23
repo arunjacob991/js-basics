@@ -1,13 +1,16 @@
-function User(name){
+let Person = function(name, age){
+     
+    this.name = name;
+    this.age = age;
+    this.getName = function(){
+        console.log(`The man is ${this.name} with age ${this.age}`)
+    }
 
-    // this = {}
-
-    this.name = name
-    this.isPwoli = true
 }
 
-let user = new User("shibu")
-let user1 = new User("ramu")
+let personOne = new Person("dasan", 50);
+let personTwo = new Person("vijayan", 60)
 
-console.log(user.name);
-console.log(user1.name);
+
+personOne.getName();
+personTwo.getName();

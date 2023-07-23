@@ -1,15 +1,18 @@
 let id1 = Symbol("id");
-let id2 = Symbol("id");
+let id2 = Symbol("id")
+
 
 const obj = {
-  name: "vasu",
-  age: 25,
-  [id1]: "something",
-  [id2]: "new thing",
-};
+ name: "muthumani",
+ [id1] : "puthu symbol",
+ [id2] : "veroru symbol"
+}
 
-// console.log(obj);
 
-for(let i in obj){
-    console.log(i);
+const keys = Reflect.ownKeys(obj)
+
+console.log(keys)
+
+for(let i of keys){
+    console.log(i)
 }

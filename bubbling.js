@@ -8,6 +8,7 @@ container.addEventListener("click", () => {
 paragraph.addEventListener("click", () => {
   console.log("paragraph clicked");
 });
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+  e.stopPropagation()
   console.log("button clicked");
 });
